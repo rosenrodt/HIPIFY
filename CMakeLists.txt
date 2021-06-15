@@ -133,7 +133,7 @@ if(UNIX)
 endif()
 
 if(HIPIFY_CLANG_TESTS)
-    find_package(PythonInterp 2.7 REQUIRED)
+    find_package(Python REQUIRED)
 
     function (require_program PROGRAM_NAME)
         find_program(FOUND_${PROGRAM_NAME} ${PROGRAM_NAME})
